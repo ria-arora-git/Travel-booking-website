@@ -72,7 +72,41 @@
             text-shadow: 0 0 10px rgba(255, 107, 107, 1), 0 0 20px rgba(240, 101, 149, 1), 0 0 30px rgba(132, 94, 247, 1);
         }
         
-        /* body { background-image: url("https://t4.ftcdn.net/jpg/05/49/86/39/360_F_549863991_6yPKI08MG7JiZX83tMHlhDtd6XLFAMce.jpg"); background-repeat: no-repeat; background-size: cover; height: 100%; width: 100%; } */
+        .flip-card {
+            perspective: 1000px; /* Add the perspective property */
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+
+
+        /* body { 
+            background-image: url("https://th.bing.com/th/id/OIP.pQz4cxMurArs78uO1wYqXwHaEJ?rs=1&pid=ImgDetMain"); 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            height: 100%; width: 100%; 
+        } */
         /* #card3:hover p{
             transform: translate(-20px,-20px) scale(1) rotate(0deg);
         } */
@@ -120,23 +154,145 @@
                 <h1 class="text-3xl text-white z-10 mb-10">Got a lot on your mind?</h1>
             </div>
             <div>
-                <h1 class="text-7xl text-white z-10 animate-bounce text-glow">TRAVEL WITH US</h1>
+                <h1 class="text-7xl text-white z-10 animate-bounce text-glow cursor-pointer">TRAVEL WITH US</h1>
             </div>
             <div class="flex justify-center mt-10">
                 <a href="#section2" class="scroll-down text-white text-2xl animate-pulse">Begin your journey</a>
             </div>
             <div class="mt-10">
-                <p class="text-xl text-white z-10 italic text-glow">"Adventure awaits those who wander."</p>
+                <p class="text-xl text-white z-10 italic text-glow cursor-pointer">"Adventure awaits those who wander."</p>
             </div>
         </div>
     </section>
 
-    </style>
+    <section id="section2" class="h-[90vh] flex flex-col justify-center items-center section relative pt-4 " style="background-image: url('https://static.vecteezy.com/system/resources/previews/006/663/048/original/creative-background-design-template-free-vector.jpg'); background-size: contain; background-position: center;">
+        <div class="mb-5">
+            <h1 class="text-5xl">Explore our Packages</h1>
+        </div>
+        <div class="h-[70vh] grid grid-cols-3 gap-x-20 gap-y-10 p-4 mt-2">
+            <div class="w-full card border rounded-lg shadow-lg overflow-hidden h-[20vh] w-[40vh] flex">
+                <div class="w-2/5">
+                    <img src="image1.jpg" alt="Image 1" class="w-full">
+                </div>
+                <div class="w-3/5 p-4 bg-gray-100 text-center">
+                    <div class="h-1/3">
+                        Name of place
+                    </div>
+                    <div class="h-2/3">
+                        Package
+                    </div>
+                </div>
+            </div>
+            <div class="w-full card border rounded-lg shadow-lg overflow-hidden h-[20vh] w-[40vh] flex">
+                <div class="w-2/5">
+                    <img src="image2.jpg" alt="Image 2" class="w-full">
+                </div>
+                <div class="w-3/5 p-4 bg-gray-100 text-center">
+                    <div class="h-1/3">
+                        Name of place
+                    </div>
+                    <div class="h-2/3">
+                        Package
+                    </div>
+                </div>
+            </div>
+            <div class="w-full card border rounded-lg shadow-lg overflow-hidden h-[20vh] w-[40vh] flex">
+                <div class="w-2/5">
+                    <img src="image3.jpg" alt="Image 3" class="w-full">
+                </div>
+                <div class="w-3/5 p-4 bg-gray-100 text-center">
+                    <div class="h-1/3">
+                        Name of place
+                    </div>
+                    <div class="h-2/3">
+                        Package
+                    </div>
+                </div>
+            </div>
+            <div class="w-full card border rounded-lg shadow-lg overflow-hidden h-[20vh] w-[40vh] flex">
+                <div class="w-2/5">
+                    <img src="image4.jpg" alt="Image 4" class="w-full">
+                </div>
+                <div class="w-3/5 p-4 bg-gray-100 text-center">
+                    <div class="h-1/3">
+                        Name of place
+                    </div>
+                    <div class="h-2/3">
+                        Package
+                    </div>
+                </div>
+            </div>
+            <div class="w-full card border rounded-lg shadow-lg overflow-hidden h-[20vh] w-[40vh] flex">
+                <div class="w-2/5">
+                    <img src="image5.jpg" alt="Image 5" class="w-full">
+                </div>
+                <div class="w-3/5 p-4 bg-gray-100 text-center">
+                    <div class="h-1/3">
+                        Name of place
+                    </div>
+                    <div class="h-2/3">
+                        Package
+                    </div>
+                </div>
+            </div>
+            <div class="w-full card border rounded-lg shadow-lg overflow-hidden h-[20vh] w-[40vh] flex">
+                <div class="w-2/5">
+                    <img src="image6.jpg" alt="Image 6" class="w-full">
+                </div>
+                <div class="w-3/5 p-4 bg-gray-100 text-center">
+                    <div class="h-1/3">
+                        Name of place
+                    </div>
+                    <div class="h-2/3">
+                        Package
+                    </div>
+                </div>
+            </div>
+            <div class="w-full card border rounded-lg shadow-lg overflow-hidden h-[20vh] w-[40vh] flex">
+                <div class="w-2/5">
+                    <img src="image7.jpg" alt="Image 7" class="w-full">
+                </div>
+                <div class="w-3/5 p-4 bg-gray-100 text-center">
+                    <div class="h-1/3">
+                        Name of place
+                    </div>
+                    <div class="h-2/3">
+                        Package
+                    </div>
+                </div>
+            </div>
+            <div class="w-full card border rounded-lg shadow-lg overflow-hidden h-[20vh] w-[40vh] flex">
+                <div class="w-2/5">
+                    <img src="image8.jpg" alt="Image 8" class="w-full">
+                </div>
+                <div class="w-3/5 p-4 bg-gray-100 text-center">
+                    <div class="h-1/3">
+                        Name of place
+                    </div>
+                    <div class="h-2/3">
+                        Package
+                    </div>
+                </div>
+            </div>
+            <div class="w-full card border rounded-lg shadow-lg overflow-hidden h-[20vh] w-[40vh] flex">
+                <div class="w-2/5">
+                    <img src="image9.jpg" alt="Image 9" class="w-full">
+                </div>
+                <div class="w-3/5 p-4 bg-gray-100 text-center">
+                    <div class="h-1/3">
+                        Name of place
+                    </div>
+                    <div class="h-2/3">
+                        Package
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
 
-    </head>
-        <section id="section2" class="h-[80vh] w-full flex justify-center items-center mt-6">
+    <section id="section3" class="h-[80vh] w-full flex justify-center items-center" style="background-image: url('https://static.vecteezy.com/system/resources/previews/006/663/048/original/creative-background-design-template-free-vector.jpg'); background-size: contain; background-position: center;">
         <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
-           
             <div class="w-2/5 flex justify-center items-center p-6 m-4 rounded-md">
                 <div class="w-80 h-80 round-container">
                     <video autoplay muted loop>
@@ -144,93 +300,268 @@
                     </video>
                 </div>
             </div>
-            <div class="w-[110vh] border-1 border-gray-300 h-90 p-4 m-3 rounded-xl backdrop-blur-md shadow-zinc-500 shadow-lg hover:shadow-none">
-                <h1 class="text-purple-900 text-xl text-bold">MOUNTAINS</h1><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur dolorum aliquam quidem commodi voluptate deleniti iusto neque at, saepe sequi vero non repellat. Quas praesentium cupiditate temporibus corrupti eligendi!</p>
-            </div>
-        </div>
-    </section>
-    <section id="section3" class="h-[80vh] w-full flex justify-center items-center">
-        <div id="card3" class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
-            <div class="w-[100vh] border-1 border-gray-300 h-90 p-4 m-2 rounded-xl backdrop-blur-md shadow-gray-900 shadow-lg hover:shadow-none">
-                <h1 class="text-white text-xl text-bold">BEACHES</h1><br>
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur dolorum aliquam quidem commodi voluptate deleniti iusto neque at, saepe sequi vero non repellat. Quas praesentium cupiditate temporibus corrupti eligendi!</p>
-            </div>
-            <div class="w-2/5 flex justify-center items-center p-6 m-4 rounded-md">
-                <div class="w-80 h-80 round-container">
-                    <video autoplay muted loop>
-                        <source src="beaches.mp4" type="video/mp4">
-                    </video>
+            <div class="w-[130vh] border-1 border-gray-300 h-90 p-4 m-3 rounded-xl backdrop-blur-md shadow-zinc-500 shadow-lg hover:shadow-none">
+                <h1 class="absolute text-xl text-bold flex justify-center items-center">Mountains</h1><br>
+                <div class="flex justify-between items-center h-full space-x-4">
+                    <div id="card1" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12392.493268545453!2d76.9678545!3d30.89959095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f88e0ddfe0b27%3A0x2cf1b6ec9befd181!2sKasauli%2C%20Himachal%20Pradesh!5e1!3m2!1sen!2sin!4v1734192386153!5m2!1sen!2sin" 
+                                    style="border:0; width: 100%; height: 100%;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade" 
+                                    class="w-full h-full">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card2" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">                    
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card3" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">                    
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section4" class="h-[80vh] w-full flex justify-center items-center">
+    
+    
+    <section id="section4" class="h-[80vh] w-full flex justify-center items-center " style="background-image: url('https://static.vecteezy.com/system/resources/previews/006/663/048/original/creative-background-design-template-free-vector.jpg'); background-size: cover; background-position: center;">
         <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
-           
             <div class="w-2/5 flex justify-center items-center p-6 m-4 rounded-md">
                 <div class="w-80 h-80 round-container">
                     <video autoplay muted loop>
-                        <source src="monuments.mp4" type="video/mp4">
+                        <source src="mountains.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
-            <div class="w-[100vh] border-1 border-gray-300 h-90 p-4 m-2 rounded-xl backdrop-blur-md shadow-zinc-500 shadow-lg hover:shadow-none">
-                <h1 class="text-purple-900 text-xl text-bold">MONUMENTS</h1><br>
-                <p class="text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur dolorum aliquam quidem commodi voluptate deleniti iusto neque at, saepe sequi vero non repellat. Quas praesentium cupiditate temporibus corrupti eligendi!</p>
+            <div class="w-[130vh] border-1 border-gray-300 h-90 p-4 m-3 rounded-xl backdrop-blur-md shadow-zinc-500 shadow-lg hover:shadow-none">
+                <h1 class="absolute text-xl text-bold flex justify-center items-center">Mountains</h1><br>
+                <div class="flex justify-between items-center h-full space-x-4">
+                    <div id="card1" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card2" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">                    
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card3" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">                    
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="section5" class="h-[80vh] w-full flex justify-center items-center">
-        <div id="card3" class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
-            <div class="w-[100vh] border-1 border-gray-300 h-90 p-4 m-2 rounded-xl backdrop-blur-md shadow-gray-900 shadow-lg hover:shadow-none">
-                <h1 class="text-purple-900 text-xl text-bold">WATERFALLS</h1><br>
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur dolorum aliquam quidem commodi voluptate deleniti iusto neque at, saepe sequi vero non repellat. Quas praesentium cupiditate temporibus corrupti eligendi!</p>
-            </div>
+
+    <section id="section5" class="h-[80vh] w-full flex justify-center items-center" style="background-image: url('https://static.vecteezy.com/system/resources/previews/006/663/048/original/creative-background-design-template-free-vector.jpg'); background-size: cover; background-position: center;">
+        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
             <div class="w-2/5 flex justify-center items-center p-6 m-4 rounded-md">
                 <div class="w-80 h-80 round-container">
                     <video autoplay muted loop>
-                        <source src="waterfalls.mp4" type="video/mp4">
+                        <source src="mountains.mp4" type="video/mp4">
                     </video>
+                </div>
+            </div>
+            <div class="w-[130vh] border-1 border-gray-300 h-90 p-4 m-3 rounded-xl backdrop-blur-md shadow-zinc-500 shadow-lg hover:shadow-none">
+                <h1 class="absolute text-xl text-bold flex justify-center items-center">Mountains</h1><br>
+                <div class="flex justify-between items-center h-full space-x-4">
+                    <div id="card1" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card2" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">                    
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card3" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">                    
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section6">
-        <footer>  
 
-        <div class="card-container">
-            <div class="card">
-                <img src="">
+    <section id="section6" class="h-[80vh] w-full flex justify-center items-center" style="background-image: url('https://static.vecteezy.com/system/resources/previews/006/663/048/original/creative-background-design-template-free-vector.jpg'); background-size: cover; background-position: center;">
+        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
+            <div class="w-2/5 flex justify-center items-center p-6 m-4 rounded-md">
+                <div class="w-80 h-80 round-container">
+                    <video autoplay muted loop>
+                        <source src="mountains.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="w-[130vh] border-1 border-gray-300 h-90 p-4 m-3 rounded-xl backdrop-blur-md shadow-zinc-500 shadow-lg hover:shadow-none">
+                <h1 class="absolute text-xl text-bold flex justify-center items-center">Mountains</h1><br>
+                <div class="flex justify-between items-center h-full space-x-4">
+                    <div id="card1" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card2" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">                    
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card3" class="flip-card h-3/4 w-1/4 border-2 rounded-lg p-2 m-2 shadow-lg shadow-gray-600 hover:shadow-none">                    
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front flex flex-col justify-center items-center bg-purple-100">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                            <div class="flip-card-back flex flex-col justify-center items-center bg-purple-200">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis quas eaque provident consequatur molestias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="flex space-x-4">
-            <div class="card bg-yellow-500 text-white p-4 rounded-lg">Card 1</div>
-            <div class="card bg-red-500 text-white p-4 rounded-lg">Card 2</div>
-            <div class="card bg-green-500 text-white p-4 rounded-lg">Card 3</div>
-          </div>
-          
-
-    <div class="card">
-        <img src="">
-    </div>
-    <div class="card">
-        <img src="">
-    </div>
-    <div class="card">
-        <img src="">
-    </div>
     </section>
 
-        <video autoplay muted loop>
+    <section id="last" style="background-image: url('https://static.vecteezy.com/system/resources/previews/006/663/048/original/creative-background-design-template-free-vector.jpg'); background-size: contain; background-position: center;">
+    <div class="w-full h-[40vh] p-4  border-1 border-gray-200 rounded-md flex flex-col justify-center text-center bg-indigo-900/30 ">
+        <div class="flex justify-center space-x-4 py-4">
+            <h1 class="text-4xl">ENQUIRE</h1>
+        </div>
+        <div class="px-4 py-4 m-2">
+            <div class="flex flex-wrap items-center space-x-4">
+                <div class="flex-1 min-w-[200px]">
 
-            <source src="path-to-your-video.mp4" type="video/mp4">
+                    <label class="block text-gray-700">From</label>
+                    <input class="w-full border border-gray-300 rounded-md px-4 py-2" type="text" value="New Delhi, India (DEL)"/>
+                </div>
+                <div class="flex-1 min-w-[200px]">
 
-        </video>
+                    <label class="block text-gray-700">To</label>
+                    <input class="w-full border border-gray-300 rounded-md px-4 py-2" placeholder="To" type="text"/>
+                </div>
+                <div class="flex-1 min-w-[200px]">
 
-        <h1 class="text-4xl text-white z-10">Section 6</h1>
+                    <label class="block text-gray-700">Depart</label>
+                    <div class="relative">
+                        <input class="w-full border border-gray-300 rounded-md px-4 py-2" type="text" value="Sun, 15 Dec 2024"/>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                            <i class="fas fa-calendar-alt text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[200px]">
 
+                    <label class="block text-gray-700">Return</label>
+                    <div class="relative">
+                        <input class="w-full border border-gray-300 rounded-md px-4 py-2" placeholder="Return" type="text"/>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                            <i class="fas fa-calendar-alt text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center mt-4">
+                    <input class="mr-2" id="direct-flight" type="checkbox"/>
+                    <label class="text-gray-700" for="direct-flight">Direct flight only</label>
+                </div>
+                <div class="flex-1 min-w-[200px]">
+
+                    <label class="block text-gray-700">Passengers</label>
+                    <select class="w-full border border-gray-300 rounded-md px-4 py-2">
+                        <option>1 Adult</option>
+                    </select>
+                </div>
+                <div class="flex w-full items-center space-x-2 mt-8">
+                    <div class="flex-1 min-w-[200px] flex items-center space-x-2">
+                        <label class="block text-gray-700">Class</label>
+                        <select class="w-full border border-gray-300 rounded-md px-4 py-2">
+                            <option>Economy</option>
+                        </select>
+                    </div>
+                    <div class="flex-1 flex items-center space-x-2">
+                        <label class="block text-gray-700">Payment Types</label>
+                        <select class="w-full border border-gray-300 rounded-md px-4 py-2">
+                            <option>5 Payment Types</option>
+                        </select>
+                    </div>
+                    <button class="bg-green-500 text-white rounded-md px-4 py-2">Search</button>
+                </div>
+                
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    </div>
     </section>
-    </footer>
+   
 </body>
 </html>
+
+
