@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .section {
+            position: relative;
+            overflow: hidden;
+        }
+        .section video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .zoom {
+            transform: scale(1.2);
+        }
+        .round-container {
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .round-container video {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="font-sans w-full h-full">
+    <section id="section1" class="h-screen flex justify-center items-center section">
+        <video autoplay muted loop class="zoom">
+            <source src="starmoonforest.mp4" type="video/mp4">
+        </video>
+        <div>
+            <div>
+                <h1 class="text-3xl text-white z-10 mb-10 text-center">Got a lot on your mind?</h1>
+            </div>
+            <div>
+                <h1 class="text-7xl text-white z-10 text-center animate-ping">TRAVEL WITH US</h1>
+            </div>
+        </div>
+    </section>
+    <section id="section2" class="h-3/4 w-full flex justify-center items-center">
+        <div class="w-full h-3/4 flex justify-center text-center">
+            <div class="w-3/5 border-2 border-black h-3/4">
+                hi
+            </div>
+            <div class="w-2/5 border-2 border-black flex justify-center items-center">
+                <div class="w-80 h-80 round-container">
+                    <video autoplay muted loop>
+                        <source src="mountains.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3" class="h-screen flex justify-center items-center section">
+        <video autoplay muted loop>
+            <source src="path-to-your-video.mp4" type="video/mp4">
+        </video>
+        <h1 class="text-4xl text-white z-10">Section 3</h1>
+    </section>
+    <section id="section4" class="h-screen flex justify-center items-center section">
+        <video autoplay muted loop>
+            <source src="path-to-your-video.mp4" type="video/mp4">
+        </video>
+        <h1 class="text-4xl text-white z-10">Section 4</h1>
+    </section>
+    <section id="section5" class="h-screen flex justify-center items-center section">
+        <video autoplay muted loop>
+            <source src="path-to-your-video.mp4" type="video/mp4">
+        </video>
+        <h1 class="text-4xl text-white z-10">Section 5</h1>
+    </section>
+    <section id="section6" class="h-screen flex justify-center items-center section">
+        <video autoplay muted loop>
+            <source src="path-to-your-video.mp4" type="video/mp4">
+        </video>
+        <h1 class="text-4xl text-white z-10">Section 6</h1>
+    </section>
+</body>
+</html>
