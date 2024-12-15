@@ -604,123 +604,76 @@
         </div>
     </section>
     
-    <section id="last" class=" flex justify-between items-center" style="background-image: url('https://cdn.wallpapersafari.com/24/55/rVAm0h.jpg'); background-size: contain; background-position: center;">
-        <div class="w-full h-[70vh] flex flex-col justify-center text-center bg-purple-200 bg-opacity-20">
-            <div class="h-[40vh]">
-                <h1 class="text-3xl text-white font-bold p-2"><u>ENQUIRE</u></h1>
-                <div class="flex flex-wrap items-center space-x-2 p-4">
-                    <div class="flex-1 min-w-[200px]">
-    
-                        <label class="block text-white">From</label>
-                        <input class="w-full border border-gray-300 rounded-md px-4 py-2" type="text" value="New Delhi, India (DEL)"/>
-                    </div>
-                    <div class="flex-1 min-w-[200px]">
-    
-                        <label class="block text-white">To</label>
-                        <input class="w-full border border-gray-300 rounded-md px-4 py-2" placeholder="To" type="text"/>
-                    </div>
-                    <div class="flex-1 min-w-[200px]">
-    
-                        <label class="block text-white">Depart</label>
-                        <div class="relative">
-                            <input class="w-full border border-gray-300 rounded-md px-4 py-2" type="text" value="Sun, 15 Dec 2024"/>
-                            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                                <i class="fas fa-calendar-alt text-gray-400"></i>
-                            </div>
+    <section id="last" class="p-4 flex justify-between items-center">
+        <div class="w-full h-[60vh] flex flex-col justify-center text-center  bg-opacity-20">
+            <div class="h-[60vh]">
+                <h1 class="text-4xl text-white font-bold mb-8 tracking-wider"><span class="border-b-4 border-blue-500">ENQUIRE</span></h1>
+                <div class="max-w-6xl mx-auto bg-white/10 backdrop-blur-md rounded-xl p-8 shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-white font-medium">From</label>
+                            <input class="w-full bg-white/80 border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 transition" type="text" value="New Delhi, India (DEL)"/>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-white font-medium">To</label>
+                            <input class="w-full bg-white/80 border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 transition" placeholder="Enter destination" type="text"/>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-white font-medium">Depart</label>
+                            <input class="w-full bg-white/80 border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 transition" type="date" value="2024-12-15"/>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-white font-medium">Return</label>
+                            <input class="w-full bg-white/80 border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 transition" type="date"/>
                         </div>
                     </div>
-                    <div class="flex-1 w-full">
-    
-                        <label class="block text-white">Return</label>
-                        <div class="relative">
-                            <input class="w-full border border-gray-300 rounded-md px-2 py-2" placeholder="Return" type="text"/>
-                            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                                <i class="fas fa-calendar-alt text-gray-400"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- <div class="items-center mt-4">
-                        <input class="mr-2" id="direct-flight" type="checkbox"/>
-                        <label class="text-gray-700" for="direct-flight">Direct flight only</label>
-                    </div> -->
-                    <br>
-                    <div class="flex-1 min-w-[200px]">
-    
-                        <label class="text-white">Passengers</label>
-                        <select class="w-full border border-gray-300 rounded-md p-4 m-2">
-                            <option>1 Adult</option>
-                        </select>
-                    </div>
-                    <div class="flex w-full items-center space-x-1 bg-purple-200 p-4 m-2" >
-                        <div class="flex-1 min-w-[200px] flex items-center space-x-2">
-                            <label class="block text-gray-700">TRAVEL-WITH</label>
-                            <select class="w-full border border-gray-300 rounded-md px-4 py-2">
-                                <option>Vinit</option>
-                                <option>Roshni</option>
-                                <option>Soubhagya</option>
-                                <option>Dhruv</option>
-                                <option>Mragank</option>
-                                <option>Aniket</option>
-                                <option>Sumona</option>
-                                <option>Anuj</option>
-                                <option>Harshit</option>
-                                <option>Diksha</option>
-                                <option>Deepali</option>
-                                <option>Vivek</option>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                        <div class="space-y-2">
+                            <label class="text-white font-medium">Passengers</label>
+                            <select class="w-full bg-white/80 border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 transition">
+                                <option>1 Adult</option>
+                                <option>2 Adults</option>
+                                <option>3 Adults</option>
+                                <option>4 Adults</option>
                             </select>
                         </div>
-                        <div class="flex-1 flex items-center space-x-2 bg-purple-200 p-4 m-2">
-                            <label class="block text-gray-700">Payment Types</label>
-                            <select class="w-full border border-gray-300 rounded-md px-4 py-2">
-                                <option>credit-card</option>
+                        <div class="space-y-2">
+                            <label class="text-white font-medium">Class</label>
+                            <select class="w-full bg-white/80 border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 transition">
+                                <option>Economy</option>
+                                <option>Business</option>
+                                <option>First Class</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-white font-medium">Payment Method</label>
+                            <select class="w-full bg-white/80 border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 transition">
+                                <option>Credit Card</option>
                                 <option>UPI</option>
-                                <option>Paypal</option>
-                                <option>debit-card</option>
-                                <option>Net-banking</option>
+                                <option>PayPal</option>
+                                <option>Debit Card</option>
+                                <option>Net Banking</option>
                             </select>
                         </div>
-                        <button class="bg-green-500 text-white rounded-md px-4 py-2">Search</button>
+                    </div>
+
+                    <div class="flex justify-center mt-8">
+                        <button class="bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold px-8 py-3 rounded-lg hover:scale-105 transform transition shadow-lg hover:shadow-purple-500/50">
+                            Search Flights
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         </section>
-        <section>
-        <div class="h-[100vh] bg-gray-700 p-4" style="background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20220215/pngtree-dreamy-blue-purple-watercolor-aesthetic-background-image_924911.jpg);">
-            <div class=" flex justify-center items-center absolute top-0 left-0 w-3/4 bg-v p-4"></div>
-        <div class="flex justify-center items-center [80%] max-w-3xl h-[25vh] bg-gradient-to-r from-blue-900 to-purple-900 text-white rounded-lg shadow-lg p-4 ml-48 mr-48">
-            <div class="flex flex-col items-center md:items-start md:flex-row justify-between">
-              
-              <h2 class="text-3xl font-bold mb-6 mt-4 md:mb-0">
-                Join the <span class="text-purple-400">TRAVEL</span> Community Today!
-              </h2>
         
-              <div class="flex flex-wrap gap-2 text-sm">
-                <button class="bg-purple-700 hover:bg-purple-800 text-white py-2 px-2 rounded-lg transition">
-                  packages
-                </button>
-                <button class="bg-purple-700 hover:bg-purple-800 text-white py-2 px-2 rounded-lg transition">
-                  Destination Information
-                </button>
-                <button class="bg-purple-700 hover:bg-purple-800 text-white py-2 px-2 rounded-lg transition">
-                   Best deals
-                </button>
-              </div>
-        
-            </div>
-        
-            <div class="flex justify-end items-center gap-4 mt-6 text-sm">
-                <button class="bg-white font-bold text-blue-700 py-2 px-4 rounded-lg hover:bg-blue-100 transition">
-                    Join now
-                  </button>
-              <button class="bg-white font-bold text-blue-700 py-2 px-4 rounded-lg hover:bg-blue-100 transition">
-                Contact Us
-              </button>
-            </div>
-            </div>
-            <div class="flex items-center justify-center w-full">
-                <div class="contact1 border-purple-400 bg-purple-900/30 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-24 shadow-gray-600 shadow-md hover:shadow-none">
+    
+    <section>
+        <div class="h-[100vh] p-4" >
+            <h1 class="flex justify-center items-center text-6xl font-bold font-poppins text-white">OUR TEAM</h1>
+        <div class="flex items-center justify-center w-full">
+            <div class="contact1 border-purple-400 bg-white/10 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-24 shadow-gray-600 shadow-md hover:shadow-none hover:scale-[1.75]">
                     <div id="contactcard1" class="flex justify-center items-center">
                         <img class="rounded-full h-24 w-24" src="ria.jpg" alt="img">
                     </div>
@@ -728,10 +681,10 @@
                         <li>Name: Ria the Radiant</li>
                         <li>Hobby: Laughing at my own jokes</li>
                         <li>Contact: pigeons preferred</li>
-                        <li>Pet Peeve: People who chew loudly</li>
+                        <li>Pet Peeve: People who never charge their phone</li>
                     </div>
                 </div>
-                <div class="contact1 border-purple-400 bg-purple-900/30 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-8 shadow-gray-600 shadow-md hover:shadow-none">
+                <div class="contact1 border-purple-400 bg-white/10 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-8 shadow-gray-600 shadow-md hover:shadow-none hover:scale-[0.85]">
                     <div id="contactcard2" class="flex justify-center items-center">
                         <img class="rounded-full h-24 w-24" src="Namita2.jpg" alt="img">
                     </div>
@@ -742,20 +695,54 @@
                         <li>Pet Peeve: Slow WiFi</li>
                     </div>
                 </div>
-                <div class="contact1 border-purple-400 bg-purple-900/30 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-24 shadow-gray-600 shadow-md hover:shadow-none">
+                <div class="contact1 border-purple-400 bg-white/10 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-24 shadow-gray-600 shadow-md hover:shadow-none hover:scale-[1.25]">
                     <div id="contactcard3" class="flex justify-center items-center">
                         <img class="rounded-full h-24 w-24" src="adin.jpg" alt="img">
                     </div>
                     <div class="h-3/4 font-sans text-white p-4 font-semibold text-sm">
                         <li>Name: Adin the adventurous</li>
                         <li>Contact: Woof me up!</li>
-                        <li> Pet Peeve: Cats judging me</li>
+                        <li>Pet Peeve: Cats judging me</li>
                         <li>Hobby: Making my pet wear silly hats</li>
                     </div>
                 </div>
                 
             </div>
+
+            <div class=" flex justify-center items-center absolute top-0 left-0 w-2/5 bg-v p-2 mt-4">
+            <div class="flex justify-center items-center [80%] w-2/5 h-[25vh] bg-white bg-opacity-10 text-white rounded-lg shadow-lg p-2 ml-48  ">
+                <div class="flex flex-col items-center md:items-start md:flex-row justify-between">
+                  
+                    <h2 class="text-3xl font-bold mb-6 mt-4 md:mb-0 p-4">
+                      Join the <span class="text-purple-400">TRAVEL</span> Community <br> Today!
+                    </h2>
+                  </div>
+                  <div class="flex flex-col gap-4 text-sm">
+                    <button class="bg-purple-700 hover:bg-purple-800 text-white py-2 px-2 rounded-lg transition">
+                      packages
+                    </button>
+                    <button class="bg-purple-700 hover:bg-purple-800 text-white py-2 px-2 rounded-lg transition">
+                      Destination Info
+                    </button>
+                    <button class="bg-purple-700 hover:bg-purple-800 text-white py-2 px-2 rounded-lg transition">
+                       Best deals
+                    </button>
+                  </div>
+            
+                </div>
+            </div>
+            
+                <div class="flex justify-center items-center gap-4 mt-6 text-sm p-4">
+                    <button class="bg-white font-bold text-blue-700 py-2 px-4 rounded-lg hover:bg-blue-100 transition">
+                        Join now
+                      </button>
+                  <button class="bg-white font-bold text-blue-700 py-2 px-4 rounded-lg hover:bg-blue-100 transition">
+                    Contact Us
+                  </button>
+                </div>
+                </div>
         </div>
+    
     </section>
        
 </body>
