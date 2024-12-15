@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
+    <title>Travel WithUs</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .section {
@@ -132,35 +132,53 @@
         .animate-soft-pulse {
             animation: soft-pulse 2s ease-in-out infinite;
         }
+        #contactcard1:hover img{
+            transform: translate(-20px,-20px);
+            transform: scale(1.25);
+        } 
+
+        #contactcard2:hover img{
+            transform: translate(-20px,-20px);
+            transform: scale(1.25);
+        } 
+
+        #contactcard3:hover img{
+            transform: translate(-20px,-20px);
+            transform: scale(1.25);
+        }
+        body::before { 
+            content: ""; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-image: url('https://wallpapers.com/images/hd/beach-night-finland-skies-ad8zsc01rwknjp41.jpg'); 
+            background-size: contain; 
+            background-position: center; 
+            
+            z-index: -1; 
+        }
 
 
-        /* body { 
-            background-image: url("https://cdn.pixabay.com/video/2023/10/22/186059-876954022_tiny.mp4"); 
-            background-repeat: no-repeat; 
-            background-size: cover; 
-            height: 100%; width: 100%; 
-        } */
-        /* #card3:hover p{
-            transform: translate(-20px,-20px) scale(1) rotate(0deg);
-        } */
-        
     </style>
 </head>
-<body class="font-sans w-full h-full">
+<body class="font-sans w-full h-full bg-gradient-to-b  min-h-screen">
     <nav class="bg-black shadow-md fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <a href="#" class="flex-shrink-0 flex items-center">
                         <img class="h-8 w-8" src="https://cdn-icons-png.flaticon.com/128/1041/1041897.png" alt="Logo">
-                        <span class="ml-3 text-xl font-bold text-white">Travel Site</span>
+                        <span class="ml-3 text-xl font-bold text-white">Travel WithUs</span>
                     </a>
                     <div class="hidden md:flex md:space-x-8 ml-10 flex items-center justify-center text-center text-white">
                         <a href="#section1" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Home</a>
-                        <a href="#section2" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Mountains</a>
-                        <a href="#section3" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Beaches</a>
-                        <a href="#section4" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Monuments</a>
-                        <a href="#section5" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Waterfalls</a>
+                        <a href="#section2" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Travel Partner</a>
+                        <a href="#section3" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Mountains</a>
+                        <a href="#section4" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Beaches</a>
+                        <a href="#section5" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Monuments</a>
+                        <a href="#section6" class="text-white hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">Waterfalls</a>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center">
@@ -198,7 +216,7 @@
         </div>
     </section>
 
-    <section id="section2" class="h-[100vh] flex flex-col justify-center items-center section relative pt-4 " style="background-image: url('https://cdn.wallpapersafari.com/24/55/rVAm0h.jpg'); background-size: cover; background-position: center;">
+    <section id="section2" class="h-[100vh] flex flex-col justify-center items-center section relative pt-4 " >
         <div class="mb-5">
             <h1 class="text-5xl wavy-text text-white">
                 <span style="--i:1">C</span>
@@ -369,10 +387,10 @@
     </section>
 
  
-    <section id="section3" class="h-[80vh] w-full flex justify-center items-center" style="background-image: url('https://cdn.wallpapersafari.com/24/55/rVAm0h.jpg'); background-size: contain; background-position: center;">
-        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
+    <section id="section3" class="h-[80vh] w-full flex justify-center items-center" >
+        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-gray-200/10 backdrop-blur-md">
             <div class="w-2/5 flex justify-center items-center p-6 m-4 rounded-md">
-                <div class="w-96 h-96 round-container">
+                <div class="w-80 h-80 round-container">
                     <video autoplay muted loop>
                         <source src="mountains.mp4" type="video/mp4">
                     </video>
@@ -426,8 +444,8 @@
             </div>
         </div>
     </section>
-    <section id="section4" class="h-[80vh] w-full flex justify-center items-center" style="background-image: url('https://cdn.wallpapersafari.com/24/55/rVAm0h.jpg'); background-size: contain; background-position: center;">
-        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
+    <section id="section4" class="h-[80vh] w-full flex justify-center items-center" >
+        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-gray-200/10 backdrop-blur-md">
 
             <div class="w-[130vh] border-1 border-gray-300 h-90 p-4 m-3 rounded-xl backdrop-blur-md shadow-indigo-950 shadow-lg hover:shadow-none">
                 <h1 class="font-bold text-white text-2xl">BEACHES</h1>
@@ -468,7 +486,7 @@
                 </div>
             </div>
             <div class="w-2/5 flex justify-center items-center p-6 m-4 rounded-md">
-                <div class="w-96 h-96 round-container">
+                <div class="w-80 h-80 round-container">
                     <video autoplay muted loop>
                         <source src="beaches.mp4" type="video/mp4">
                     </video>
@@ -477,10 +495,10 @@
         </div>
     </section>
 
-    <section id="section5" class="h-[80vh] w-full flex justify-center items-center" style="background-image: url('https://cdn.wallpapersafari.com/24/55/rVAm0h.jpg'); background-size: contain; background-position: center;">
-        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
+    <section id="section5" class="h-[80vh] w-full flex justify-center items-center" >
+        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-gray-200/10 backdrop-blur-md">
             <div class="w-2/5 flex justify-center items-center p-6 m-4 rounded-md">
-                <div class="w-96 h-96 round-container">
+                <div class="w-80 h-80 round-container">
                     <video autoplay muted loop>
                         <source src="monuments.mp4" type="video/mp4">
                     </video>
@@ -527,8 +545,8 @@
         </div>
     </section>
 
-    <section id="section6" class="h-[80vh] w-full flex justify-center items-center" style="background-image: url('https://cdn.wallpapersafari.com/24/55/rVAm0h.jpg'); background-size: contain; background-position: center;">
-        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-indigo-900/30 backdrop-blur-md">
+    <section id="section6" class="h-[80vh] w-full flex justify-center items-center" >
+        <div class="w-full h-[70vh] p-4 m-4 border-1 border-gray-200 rounded-md flex justify-center text-center bg-gray-200/10 backdrop-blur-md">
 
             <div class="w-[130vh] border-1 border-gray-300 h-90 p-4 m-3 rounded-xl backdrop-blur-md shadow-indigo-950 shadow-lg hover:shadow-none">
                 <h1 class="font-bold text-white text-2xl">WATERFALLS</h1>
@@ -577,7 +595,7 @@
                 </div>
             </div>
             <div class="w-2/5 flex justify-center items-center p-6 m-4 rounded-md">
-                <div class="w-96 h-96 round-container">
+                <div class="w-80 h-80 round-container">
                     <video autoplay muted loop>
                         <source src="waterfalls.mp4" type="video/mp4">
                     </video>
@@ -586,24 +604,24 @@
         </div>
     </section>
     
-    <section id="last" class="p-4 flex justify-between items-center" style="background-image: url('https://cdn.wallpapersafari.com/24/55/rVAm0h.jpg'); background-size: contain; background-position: center;">
-        <div class="w-full h-[60vh] flex flex-col justify-center text-center bg-purple-200 bg-opacity-20">
-            <div class="h-[60vh]">
-                <h1 class="text-4xl text-white font-bold p-4"><u>ENQUIRE</u></h1>
-                <div class="flex flex-wrap items-center space-x-4 p-8">
+    <section id="last" class=" flex justify-between items-center" style="background-image: url('https://cdn.wallpapersafari.com/24/55/rVAm0h.jpg'); background-size: contain; background-position: center;">
+        <div class="w-full h-[70vh] flex flex-col justify-center text-center bg-purple-200 bg-opacity-20">
+            <div class="h-[40vh]">
+                <h1 class="text-3xl text-white font-bold p-2"><u>ENQUIRE</u></h1>
+                <div class="flex flex-wrap items-center space-x-2 p-4">
                     <div class="flex-1 min-w-[200px]">
     
-                        <label class="block text-gray-700">From</label>
+                        <label class="block text-white">From</label>
                         <input class="w-full border border-gray-300 rounded-md px-4 py-2" type="text" value="New Delhi, India (DEL)"/>
                     </div>
                     <div class="flex-1 min-w-[200px]">
     
-                        <label class="block text-gray-700">To</label>
+                        <label class="block text-white">To</label>
                         <input class="w-full border border-gray-300 rounded-md px-4 py-2" placeholder="To" type="text"/>
                     </div>
                     <div class="flex-1 min-w-[200px]">
     
-                        <label class="block text-gray-700">Depart</label>
+                        <label class="block text-white">Depart</label>
                         <div class="relative">
                             <input class="w-full border border-gray-300 rounded-md px-4 py-2" type="text" value="Sun, 15 Dec 2024"/>
                             <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
@@ -613,7 +631,7 @@
                     </div>
                     <div class="flex-1 w-full">
     
-                        <label class="block text-gray-700">Return</label>
+                        <label class="block text-white">Return</label>
                         <div class="relative">
                             <input class="w-full border border-gray-300 rounded-md px-2 py-2" placeholder="Return" type="text"/>
                             <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
@@ -629,7 +647,7 @@
                     <br>
                     <div class="flex-1 min-w-[200px]">
     
-                        <label class="text-gray-700">Passengers</label>
+                        <label class="text-white">Passengers</label>
                         <select class="w-full border border-gray-300 rounded-md p-4 m-2">
                             <option>1 Adult</option>
                         </select>
@@ -638,9 +656,18 @@
                         <div class="flex-1 min-w-[200px] flex items-center space-x-2">
                             <label class="block text-gray-700">TRAVEL-WITH</label>
                             <select class="w-full border border-gray-300 rounded-md px-4 py-2">
-                                <option>Economy</option>
-                                <option>Bussiness</option>
-                               
+                                <option>Vinit</option>
+                                <option>Roshni</option>
+                                <option>Soubhagya</option>
+                                <option>Dhruv</option>
+                                <option>Mragank</option>
+                                <option>Aniket</option>
+                                <option>Sumona</option>
+                                <option>Anuj</option>
+                                <option>Harshit</option>
+                                <option>Diksha</option>
+                                <option>Deepali</option>
+                                <option>Vivek</option>
                             </select>
                         </div>
                         <div class="flex-1 flex items-center space-x-2 bg-purple-200 p-4 m-2">
@@ -659,37 +686,77 @@
             </div>
         </div>
         </section>
-        <section class="" style="background-image: url('https://cdn.wallpapersafari.com/24/55/rVAm0h.jpg'); background-size: contain; background-position: center;"">
-        <div class="h-[60vh]">
+        <section>
+        <div class="h-[100vh] bg-gray-700 p-4" style="background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20220215/pngtree-dreamy-blue-purple-watercolor-aesthetic-background-image_924911.jpg);">
+            <div class=" flex justify-center items-center absolute top-0 left-0 w-3/4 bg-v p-4"></div>
+        <div class="flex justify-center items-center [80%] max-w-3xl h-[25vh] bg-gradient-to-r from-blue-900 to-purple-900 text-white rounded-lg shadow-lg p-4 ml-48 mr-48">
+            <div class="flex flex-col items-center md:items-start md:flex-row justify-between">
+              
+              <h2 class="text-3xl font-bold mb-6 mt-4 md:mb-0">
+                Join the <span class="text-purple-400">TRAVEL</span> Community Today!
+              </h2>
+        
+              <div class="flex flex-wrap gap-2 text-sm">
+                <button class="bg-purple-700 hover:bg-purple-800 text-white py-2 px-2 rounded-lg transition">
+                  packages
+                </button>
+                <button class="bg-purple-700 hover:bg-purple-800 text-white py-2 px-2 rounded-lg transition">
+                  Destination Information
+                </button>
+                <button class="bg-purple-700 hover:bg-purple-800 text-white py-2 px-2 rounded-lg transition">
+                   Best deals
+                </button>
+              </div>
+        
+            </div>
+        
+            <div class="flex justify-end items-center gap-4 mt-6 text-sm">
+                <button class="bg-white font-bold text-blue-700 py-2 px-4 rounded-lg hover:bg-blue-100 transition">
+                    Join now
+                  </button>
+              <button class="bg-white font-bold text-blue-700 py-2 px-4 rounded-lg hover:bg-blue-100 transition">
+                Contact Us
+              </button>
+            </div>
+            </div>
             <div class="flex items-center justify-center w-full">
-                <div class="contact1 border-purple-400 bg-purple-900/40 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-24 shadow-gray-600 shadow-md hover:shadow-none">
-                    <div class="flex justify-center items-center p-4 m-4 bg-gray-100 h-24 w-24 rounded-full border-gray-100">
-                        <img src="img.png" alt="">
+                <div class="contact1 border-purple-400 bg-purple-900/30 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-24 shadow-gray-600 shadow-md hover:shadow-none">
+                    <div id="contactcard1" class="flex justify-center items-center">
+                        <img class="rounded-full h-24 w-24" src="ria.jpg" alt="img">
                     </div>
-                    <div class="h-3/4 font-sans text-black">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos inventore blanditiis, natus laudantium neque illo harum ut amet dolorum quod?</p>
-                    </div>
-                </div>
-                <div class="contact1 border-purple-400 bg-purple-900/40 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-8 shadow-gray-600 shadow-md hover:shadow-none">
-                    <div class="flex justify-center items-center p-4 m-4 bg-gray-100 h-24 w-24 rounded-full border-gray-100">
-                        <img src="img.png" alt="">
-                    </div>
-                    <div class="h-3/4 font-sans text-black">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos inventore blanditiis, natus laudantium neque illo harum ut amet dolorum quod?</p>
+                    <div class="h-3/4 font-sans text-white p-4 font-semibold text-sm">
+                        <li>Name: Ria the Radiant</li>
+                        <li>Hobby: Laughing at my own jokes</li>
+                        <li>Contact: pigeons preferred</li>
+                        <li>Pet Peeve: People who chew loudly</li>
                     </div>
                 </div>
-                <div class="contact1 border-purple-400 bg-purple-900/40 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-24 shadow-gray-600 shadow-md hover:shadow-none">
-                    <div class="flex justify-center items-center p-4 m-4 bg-gray-100 h-24 w-24 rounded-full border-gray-100">
-                        <img src="img.png" alt="">
+                <div class="contact1 border-purple-400 bg-purple-900/30 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-8 shadow-gray-600 shadow-md hover:shadow-none">
+                    <div id="contactcard2" class="flex justify-center items-center">
+                        <img class="rounded-full h-24 w-24" src="Namita2.jpg" alt="img">
                     </div>
-                    <div class="h-3/4 font-sans text-black">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos inventore blanditiis, natus laudantium neque illo harum ut amet dolorum quod?</p>
+                    <div class="h-3/4 font-sans text-white p-4 font-semibold text-sm">
+                        <li>Name: Namita the Notorious</li>
+                        <li>Hobby: Taking photos of my food before eating</li>
+                        <li>Contact: Only if snacks are involved</li>
+                        <li>Pet Peeve: Slow WiFi</li>
+                    </div>
+                </div>
+                <div class="contact1 border-purple-400 bg-purple-900/30 backdrop-blur-md rounded-lg w-1/4 h-3/4 p-4 m-4 mt-24 shadow-gray-600 shadow-md hover:shadow-none">
+                    <div id="contactcard3" class="flex justify-center items-center">
+                        <img class="rounded-full h-24 w-24" src="adin.jpg" alt="img">
+                    </div>
+                    <div class="h-3/4 font-sans text-white p-4 font-semibold text-sm">
+                        <li>Name: Adin the adventurous</li>
+                        <li>Contact: Woof me up!</li>
+                        <li> Pet Peeve: Cats judging me</li>
+                        <li>Hobby: Making my pet wear silly hats</li>
                     </div>
                 </div>
                 
             </div>
         </div>
-        </section>
+    </section>
        
 </body>
 </html>
